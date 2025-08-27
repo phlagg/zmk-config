@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
@@ -42,11 +41,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2            &kp N3    &kp N4        &kp N5                                &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q   &kp W             &kp E     &kp R         &kp T                                 &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSPC
-&kp CAPS   &kp A   &kp S             &kp D     &kp F         &kp G                                 &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X             &kp C     &kp V         &kp B      &bl BL_OFF    &kp K_MUTE2  &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                   &kp LEFT_CONTROL  &kp LALT  &kp LEFT_GUI  &mo LOWER  &kp RET       &kp SPACE    &mo RAISE  &kp RCTRL  &kp RALT   &kp RGUI
+&kp GRAVE  &kp N1  &kp N2            &kp N3    &kp N4        &kp N5                                     &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q   &kp W             &kp E     &kp R         &kp T                                      &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSPC
+&kp CAPS   &kp A   &kp S             &kp D     &kp F         &kp G                                      &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X             &kp C     &kp V         &kp B      &rgb_ug RGB_TOG    &kp K_MUTE2  &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+                   &kp LEFT_CONTROL  &kp LALT  &kp LEFT_GUI  &mo LOWER  &kp RET            &kp SPACE    &mo RAISE  &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
             sensor-bindings =
@@ -88,9 +87,9 @@
 
             bindings = <
 &kp ESCAPE  &none       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans         &kp HOME  &kp END   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-&none       &kp INS     &kp PSCRN     &kp K_CMENU   &trans        &trans                          &kp PG_UP      &trans    &kp UP    &kp EQUAL         &kp BACKSPACE      &kp DEL
-&trans      &kp LALT    &kp LCTRL     &kp LSHFT     &trans        &kp CLCK                        &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT         &trans             &none
-&trans      &kp K_UNDO  &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &trans         &kp HOME  &kp END   &trans            &trans             &trans
+&none       &kp INS     &kp PSCRN     &kp K_CMENU   &trans        &trans                          &trans         &trans    &kp UP    &kp EQUAL         &kp BACKSPACE      &kp DEL
+&trans      &trans      &trans        &trans        &trans        &trans                          &kp PAGE_UP    &kp LEFT  &kp DOWN  &kp RIGHT         &trans             &none
+&trans      &kp K_UNDO  &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans        &trans    &trans  &kp PAGE_DOWN  &kp HOME  &kp END   &trans            &trans             &trans
                         &trans        &trans        &trans        &trans        &trans    &trans  &trans         &trans    &trans    &trans
             >;
 
