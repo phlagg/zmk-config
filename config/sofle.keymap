@@ -35,9 +35,10 @@
             key-positions = <24 36 50>;
         };
 
-        meta {
+        enter {
             bindings = <&kp ENTER>;
             key-positions = <54 55>;
+            timeout-ms = <100>;
         };
     };
 
