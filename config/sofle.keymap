@@ -27,6 +27,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Caps {
+            bindings = <&kp CAPS>;
+            key-positions = <24 36 50>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
