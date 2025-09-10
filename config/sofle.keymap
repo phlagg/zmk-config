@@ -38,6 +38,7 @@
         enter {
             bindings = <&kp ENTER>;
             key-positions = <54 55>;
+            timeout-ms = <75>;
         };
     };
 
@@ -101,7 +102,7 @@
 
             bindings = <
 &kp ESCAPE  &none   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                          &none   &none     &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL
-&none       &trans  &trans        &trans        &trans        &trans                                &none   &none     &kp UP         &none             &kp BACKSPACE      &kp DEL
+&none       &trans  &trans        &trans        &trans        &trans                                &none   &none     &kp UP         &none             &kp BACKSLASH      &kp DEL
 &trans      &trans  &trans        &trans        &trans        &trans                                &none   &kp LEFT  &kp DOWN       &kp RIGHT         &none              &none
 &trans      &trans  &trans        &trans        &trans        &trans        &trans          &trans  &none   &none     &none          &none             &none              &trans
                     &trans        &trans        &trans        &trans        &kp LEFT_GUI    &trans  &trans  &trans    &trans         &trans
