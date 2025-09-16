@@ -38,7 +38,7 @@
         enter {
             bindings = <&kp ENTER>;
             key-positions = <54 55>;
-            timeout-ms = <75>;
+            timeout-ms = <150>;
         };
     };
 
@@ -81,9 +81,9 @@
 
             bindings = <
 &kp ESC  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                           &kp F6     &kp F7    &kp F8   &kp F9  &kp F10  &kp F11
-&none    &none   &none   &none   &none   &none                            &kp PG_UP  &none     &none    &none   &none    &kp F12
-&trans   &none   &none   &none   &none   &none                            &kp HOME   &kp END   &none    &none   &none    &none
-&trans   &none   &none   &none   &none   &none   &trans    &trans         &kp PG_DN  &kp HOME  &kp END  &none   &none    &trans
+&none    &none   &none   &none   &none   &none                            &none      &none     &none    &none   &none    &kp F12
+&trans   &none   &none   &none   &none   &none                            &kp PG_UP  &kp HOME  &kp END  &none   &none    &none
+&trans   &none   &none   &none   &none   &none   &trans    &trans         &kp PG_DN  &none     &none    &none   &none    &trans
                  &trans  &trans  &trans  &trans  &trans    &kp BACKSPACE  &trans     &trans    &trans   &trans
             >;
 
