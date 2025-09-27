@@ -59,7 +59,7 @@
 &kp GRAVE         &kp N1  &kp N2        &kp N3        &kp N4     &kp N5                                &kp N6     &kp N7     &kp N8         &kp N9         &kp N0    &kp MINUS
 &kp TAB           &kp Q   &kp W         &kp E         &kp R      &kp T                                 &kp Y      &kp U      &kp I          &kp O          &kp P     &kp BACKSPACE
 &mt LCTRL ESCAPE  &kp A   &kp S         &kp D         &kp F      &kp G                                 &kp H      &kp J      &kp K          &kp L          &kp SEMI  &kp SQT
-&kp LSHFT         &kp Z   &kp X         &kp C         &kp V      &kp B      &kp C_PAUSE    &kp C_MUTE  &kp N      &kp M      &kp COMMA      &kp DOT        &kp FSLH  &mt RIGHT_SHIFT ENTER
+&mt LSHFT ENTER   &kp Z   &kp X         &kp C         &kp V      &kp B      &kp C_PAUSE    &kp C_MUTE  &kp N      &kp M      &kp COMMA      &kp DOT        &kp FSLH  &mt RIGHT_SHIFT ENTER
                           &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL  &mo LOWER  &kp SPACE      &kp SPACE   &mo RAISE  &kp RCTRL  &kp RIGHT_GUI  &kp RIGHT_ALT
             >;
 
@@ -80,11 +80,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp ESC  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                           &kp F6     &kp F7    &kp F8   &kp F9  &kp F10  &kp F11
-&none    &none   &none   &none   &none   &none                            &none      &none     &none    &none   &none    &kp F12
-&trans   &none   &none   &none   &none   &none                            &kp PG_UP  &kp HOME  &kp END  &none   &none    &none
-&trans   &none   &none   &none   &none   &none   &trans    &trans         &kp PG_DN  &none     &none    &none   &none    &trans
-                 &trans  &trans  &trans  &trans  &trans    &kp BACKSPACE  &trans     &trans    &trans   &trans
+&kp ESC       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                           &kp F6     &kp F7    &kp F8   &kp F9  &kp F10  &kp F11
+&none         &none   &none   &none   &none   &none                            &none      &none     &none    &none   &none    &kp F12
+&kp LEFT_GUI  &none   &none   &none   &none   &none                            &kp PG_UP  &kp HOME  &kp END  &none   &none    &none
+&trans        &none   &none   &trans  &none   &none   &trans    &trans         &kp PG_DN  &none     &none    &none   &none    &trans
+                      &trans  &trans  &trans  &trans  &trans    &kp BACKSPACE  &trans     &trans    &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -103,7 +103,7 @@
             bindings = <
 &kp ESCAPE  &none   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                          &none   &none     &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL
 &none       &trans  &trans        &trans        &trans        &trans                                &none   &none     &kp UP         &none             &kp BACKSLASH      &kp DELETE
-&trans      &trans  &trans        &trans        &trans        &trans                                &none   &kp LEFT  &kp DOWN       &kp RIGHT         &none              &none
+&trans      &trans  &trans        &trans        &trans        &trans                                &none   &kp LEFT  &kp DOWN       &kp RIGHT         &none              &kp RIGHT_GUI
 &trans      &trans  &trans        &trans        &trans        &trans        &trans          &trans  &none   &none     &none          &none             &none              &trans
                     &trans        &trans        &trans        &trans        &kp LEFT_GUI    &trans  &trans  &trans    &trans         &trans
             >;
